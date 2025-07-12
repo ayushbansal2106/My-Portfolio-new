@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /* color: white; */
+}
+
+body {
+  background-image: url("/Assets/img/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* navbar */
+
+#mainmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 15px 0px 15px;
+  height: 50px;
+  background-color: #3a405a;
+  border-radius: 15px;
+}
+
+#mainmenu a {
+  margin: 0px 10px 0px 10px;
+  padding: 3px 3px 3px 3px;
+  text-decoration: none;
+  border: 2px solid #3a405a;
+  color: #f9dec9;
+}
+
+#mainmenu a:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+#block1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Picture */
+
+#mypic {
+  height: 40vw;
+  width: 40vw;
+  max-width: 375px;
+  max-height: 500px;
+  background-image: url(/Assets/img/MyImage.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px double black;
+  margin: 20px 0px 20px 30px;
+  padding: 5px;
+}
+
+/* About Me */
+
+#AboutMe {
+  height: 500px;
+  /* background-color: antiquewhite; */
+  color: #e9afa3;
+  flex: 1;
+  margin: 20px 30px 20px 30px;
+  border-radius: 10px;
+}
+
+#AboutMe h1 {
+  text-align: center;
+  margin-right: 100px;
+}
+
+#InfoAboutME {
+  margin: 20px 20px 20px 20px;
+  font-size: 1.25rem;
+}
+
+#MyJourney {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  color: #e9afa3;
+  margin: 20px 30px;
+  border-radius: 10px;
+}
+
+.JourneyText {
+  flex: 1;
+  font-size: 1.25rem;
+  min-width: 280px;
+  max-width: 600px;
+  order: 1;
+}
+
+.JourneyImage {
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  height: 450px;
+  background-image: url("/Assets/img/MyJourney.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  order: 2;
+}
+
+@media (max-width: 1000px) {
+  #block1 {
+    flex-direction: column;
+  }
+
+  #mainmenu {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  #mainmenu a {
+    margin: 5px 0;
+  }
+
+  #AboutMe {
+    margin: 15px;
+  }
+
+  #mypic {
+    margin: 15px;
+    width: 80vw;
+    max-width: 300px;
+    height: 80vw;
+    max-height: 300px;
+  }
+
+  #InfoAboutME {
+    font-size: 0.9rem;
+  }
+
+  #MyJourney {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .JourneyImage {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 15px 0;
+    order: 1;
+  }
+
+  .JourneyText {
+    font-size: 0.95rem;
+    text-align: center;
+    order: 2;
+  }
+}
