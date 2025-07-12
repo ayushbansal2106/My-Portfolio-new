@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("/Assets/img/Background.jpg");
+  background-image: url("../Assets/img/Background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ body {
   width: 40vw;
   max-width: 375px;
   max-height: 500px;
-  background-image: url(/Assets/img/MyImage.jpg);
+  background-image: url(../Assets/img/MyImage.jpg);
   background-size: cover;
   border-radius: 50%;
   border: 5px double black;
@@ -105,7 +105,7 @@ body {
   width: 100%;
   max-width: 400px;
   height: 450px;
-  background-image: url("/Assets/img/MyJourney.png");
+  background-image: url("../Assets/img/MyJourney.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
