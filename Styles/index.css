@@ -11,18 +11,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  padding-top: 15px;
 }
 
 /* navbar */
 
 #mainmenu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 15px 15px 0px 15px;
   height: 50px;
   background-color: #3a405a;
   border-radius: 15px;
+  position: sticky;
+  top: 5px;
+  z-index: 1000;
 }
 
 #mainmenu a {
@@ -63,7 +67,8 @@ body {
 /* About Me */
 
 #AboutMe {
-  height: 500px;
+  min-height: 300px;
+  height: auto;
   /* background-color: antiquewhite; */
   color: #e9afa3;
   flex: 1;
@@ -97,21 +102,34 @@ body {
   font-size: 1.25rem;
   min-width: 280px;
   max-width: 600px;
+  padding-left: 50px;
+  text-align: left;
   order: 1;
 }
 
 .JourneyImage {
   flex: 1;
   width: 100%;
-  max-width: 400px;
-  height: 450px;
+  max-width: 700px;
+  height: 600px;
   background-image: url("../Assets/img/MyJourney.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: auto;
+  /* margin: auto; */
   order: 2;
 }
+
+#MyJourney {
+  margin-top: 30px;
+}
+
+#MyJourney h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 
 @media (max-width: 1000px) {
   #block1 {
@@ -123,6 +141,7 @@ body {
     align-items: center;
     height: auto;
     padding: 10px;
+    position: relative;
   }
 
   #mainmenu a {
@@ -163,5 +182,6 @@ body {
     font-size: 0.95rem;
     text-align: center;
     order: 2;
+    padding: 0px;
   }
 }
