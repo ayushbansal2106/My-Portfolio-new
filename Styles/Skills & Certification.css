@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,6 @@ body {
   padding-top: 15px;
 }
 
-/* navbar */
 
 #mainmenu {
   display: flex;
@@ -40,7 +39,7 @@ body {
 #mainmenu a:hover {
   border: 2px solid white;
   border-radius: 5px;
-}
+} */
 
 /* Skill Section */
 .skill-section {
@@ -67,14 +66,38 @@ body {
   flex: 1 1 300px;
 }
 
-.skill-text ul {
+.right-aligned-list {
+  list-style: none; /* remove default bullets */
+  text-align: right; /* right-align text */
+  padding-right: 40px;
+}
+
+.right-aligned-list li {
+  position: relative;
+  margin-bottom: 10px;
+  color: #fce6d8; /* light color for dark bg */
+}
+
+.right-aligned-list li::after {
+  content: " •"; /* bullet AFTER the text */
+  font-size: 20px;
+  color: #fce6d8;
+  margin-left: 6px;
+}
+
+.skill-text ul.right-aligned-list {
   margin-bottom: 30px;
   padding-left: 20px;
-
+  text-align: right;
 }
 
 .skill-text li {
   margin-bottom: 10px;
+}
+
+.right h2 {
+  text-align: right;
+  margin-right: 60px;
 }
 
 .cert-link {
@@ -98,7 +121,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #mainmenu {
     flex-direction: column;
     height: auto;

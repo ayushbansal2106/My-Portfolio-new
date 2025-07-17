@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Popup</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .thumbnail {
+      width: 200px;
+      cursor: pointer;
+    }
+
+    /* Hidden checkbox */
+    #img-popup {
+      display: none;
+    }
+
+    /* Overlay styles */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    /* Show when checkbox is checked */
+    #img-popup:checked + .overlay {
+      display: flex;
+    }
+
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #fff;
+    }
+
+    /* Close button (X) */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image Label for popup -->
+  <label for="img-popup">
+    <img src="../Assets/img/DEMO/Random-Name-Selector 1.png" alt="Click to Enlarge" class="thumbnail">
+  </label>
+
+  <!-- Hidden checkbox to trigger popup -->
+  <input type="checkbox" id="img-popup">
+
+  <!-- Overlay with full image -->
+  <div class="overlay">
+    <label for="img-popup" class="close">&times;</label>
+    <img src="../Assets/img/DEMO/Random-Name-Selector 1.png" alt="Enlarged Image">
+  </div>
+
+</body>
+</html>

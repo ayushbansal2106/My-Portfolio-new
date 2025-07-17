@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills & Certifications</title>
+    <link rel="stylesheet" href="../styles/projects & ecperience.css">
+    <link rel="stylesheet" href="../styles/background-navbar.css">
+    <title>Projects & Experience</title>
 </head>
+
 <body>
     <div id="mainmenu">
         <a href="../index.html">HOME</a>
@@ -16,17 +20,28 @@
 
     <div class="projects">
         <div id="project1">
-            <p>Project 1</p>
-            <div class="ProjectDemo">
-                <video src="#" class="DemoVideo"></video>
-                <img src="#" alt="Demo Image 1" class="DemoImage">
-                <img src="#" alt="Demo Image 2" class="DemoImage">
-                <img src="#" alt="Demo Image 3" class="DemoImage">
+            <h1 class="project-name">Random Name Selector</h1>
+            <div class="slider-wrapper">
+                <button class="slider-btn left"
+                    onclick="document.getElementById('slider').scrollLeft -= 400">&#10094;</button>
+                <div class="slider" id="slider">
+                    <video src="../Assets/video/Random Name Selector Demo Video.mp4" class="slide" controls autoplay
+                        muted></video>
+                    <a href="../Assets/img/DEMO/Random-Name-Selector 1.png" target="_blank"><img
+                            src="../Assets/img/DEMO/Random-Name-Selector 1.png" alt="Image 1" class="slide"></a>
+                    <a href="../Assets/img/DEMO/Random-Name-Selector 2.png" target="_blank"><img
+                            src="../Assets/img/DEMO/Random-Name-Selector 2.png" alt="Image 2" class="slide"></a>
+                    <a href="../Assets/img/DEMO/Random-Name-Selector 3.png" target="_blank"><img
+                            src="../Assets/img/DEMO/Random-Name-Selector 3.png" alt="Image 3" class="slide"></a>
+                </div>
+                <button class="slider-btn right"
+                    onclick="document.getElementById('slider').scrollLeft += 400">&#10095;</button>
             </div>
         </div>
         <div id="project2">
-            <p>Project 2</p>
+            <h1 class="project-name"></h1>
         </div>
     </div>
 </body>
+
 </html>

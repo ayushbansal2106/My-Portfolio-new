@@ -1,0 +1,85 @@
+/* Outer wrapper for the entire slider */
+.slider-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 50px auto;
+  padding: 0 60px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Each image or video slide */
+.slide {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  background-color: black;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  padding: 12px 16px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Left arrow */
+.slider-btn.left {
+  left: 10px;
+}
+
+/* Right arrow */
+.slider-btn.right {
+  right: 10px;
+}
+
+/* Optional: responsive adjustment */
+@media (max-width: 1000px) {
+
+  .slide {
+    width: 80vw;
+  }
+
+  .slider-btn {
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .slider-wrapper {
+    padding: 0 20px;
+  }
+
+  .slider-btn.left {
+    left: 0;
+  }
+
+  .slider-btn.right {
+    right: 0;
+  }
+}
