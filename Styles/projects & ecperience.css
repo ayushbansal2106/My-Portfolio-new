@@ -2,14 +2,15 @@
 .slider-wrapper {
   position: relative;
   width: 90%;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 0 60px;
   overflow: hidden;
 }
 
 .slider {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  position: relative;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -28,6 +29,13 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   object-fit: cover;
   background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide:hover {
+  transform: scale(1.1);
+  z-index: 10;
+
 }
 
 .slider-btn {
@@ -58,6 +66,34 @@
 .slider-btn.right {
   right: 10px;
 }
+
+.project-title {
+  text-align: center;
+  margin-top: 25px;
+  color: #f9dec9;
+}
+
+.project-links {
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+  padding: 0 60px;
+}
+
+.links {
+  width: max-content;
+  height: max-content;
+  font-size: large;
+  color: black;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.links:hover {
+  transform: scale(0.8);
+}
+
+
 
 /* Optional: responsive adjustment */
 @media (max-width: 1000px) {
